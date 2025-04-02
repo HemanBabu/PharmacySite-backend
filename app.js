@@ -12,7 +12,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 app.use(express.json());
-app.use(cors({ origin: "http://"+process.env.SERVER+":3000"}));
+app.use(cors());
 
 app.use("/auth", authRouter);
 app.use("/search", netmedsRouter);
