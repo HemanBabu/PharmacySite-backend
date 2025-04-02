@@ -25,4 +25,9 @@ connectDB()
   throw e;
 });
 
+/*
+app.listen(3002,()=>{
+ console.log(" server is listening on !!!!!!!!!!!!!!!!!!!") 
+})*/
+
 module.exports = app;

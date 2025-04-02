@@ -1,4 +1,5 @@
 const app = require("./app.js");
-const serverless = require("serverless-http");
 
-module.exports = serverless(app);
+app.listen(process.env.PORT, process.env.SERVER, ()=>{
+  console.log(`listening on ${process.env.SERVER}:${process.env.PORT}`);
+});
